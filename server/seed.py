@@ -7,6 +7,8 @@ from faker import Faker
 from app import app
 from models import db, Message
 
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+
 fake = Faker()
 
 usernames = [fake.first_name() for i in range(4)]
